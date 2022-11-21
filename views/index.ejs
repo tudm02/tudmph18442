@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="nav" style="background-color: #5b0ca4;" >
+    <div class="container nav-top"  >
+        <div class="row nav-content">
+            <div>
+                <a id="nav" href="/" style="text-decoration: none;">hình nền đẹp</a>
+            </div>
+            <!--    icon search-->
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <a href="add" class="btn-add" style="vertical-align:middle"><span>thêm ảnh</span></a>
+    <div class="container p-5" style="background-color: #ffc400;">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <% for(var i = 0;i < 3;i++){ %>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top"
+                             src="https://baoquocte.vn/stores/news_dataimages/dieulinh/012020/29/15/nhung-buc-anh-dep-tuyet-voi-ve-tinh-ban.jpg"
+                             style="object-fit: cover;" width="100%" height="300px">
+                        <div class="card-body">
+                            <p class="card-text">hình nền không dành cho trẻ em dưới 18 tuổi, phụ nữ có thai và trẻ em đang cho con bú.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+                                </div>
+                                <!--          <small class="text-muted">9 mins</small>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        <!-------------------------------->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
+            <% for(var i = 0;i < 3;i++){ %>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top"
+                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAwl7n2OHaVZDujlqAsqgLJE2oSx5gZwEF8eyCFa56wzj7D-FE6m7CcXZyo7rfOtNGfEY&usqp=CAUf"
+                             style="object-fit: cover;" width="100%" height="300px">
+                        <div class="card-body">
+                            <p class="card-text">hình nền không dành cho trẻ em dưới 18 tuổi, phụ nữ có thai và trẻ em đang cho con bú.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Xem</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Tải xuống</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="d-flex">
+        <h6 id="text1" style="color: #9f0000">POWERED BY</h6>
+        <h6 id="text2" class="ml-1" style="color: #57a8ff">hình nền đẹp</h6>
+    </div>
+</footer>
+
+</body>
+</html>

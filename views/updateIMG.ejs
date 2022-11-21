@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Update</title>
+</head>
+<body class="container" style=" background-color: #c1eaf1" >
+
+<form method="post" action="/updateImgAss" enctype="application/x-www-form-urlencoded"
+      style="text-align: right;padding: 5px;margin: 10px" >
+    <input name="id" value="<%= Ass.id %>" hidden>
+
+    <input name="content" value="<%= Ass.content %>" placeholder="Sua noi dung anh:">
+
+    <input name="date" value="<%= Ass.date %>" placeholder="Sua date:">
+
+    <input name="linkImg" value="<%= Ass.linkImg %>" placeholder="Sua link anh:">
+
+    <button type="submit">Update</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
